@@ -1,3 +1,50 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* hamburger menu */
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+  transform: rotate(0);
+  transition: all 0.5s;
+}
+.open .hamburger-top {
+  transform: rotate(45deg) translateY(8px) translateX(7px);
+}
+
+.open .hamburger-middle {
+  display: none;
+}
+.open .hamburger-bottom {
+  transform: rotate(-45deg) translateY(1px) translateX(-2px);
+}
+.animate-smoth {
+  transition: all 0.5s;
+}
+
+/* Show aside and the nav inside it  */
+.nav-section .show-aside {
+  transform: translateX(0);
+}
+
+.show-hidden-nav {
+  transform: translateX(250px);
+}
+
+.animate-menu-links {
+  animation: animate-menu-links 0.5s ease-in-out forwards;
+}
+
+@keyframes animate-menu-links {
+  0% {
+    transform: scaleY(0);
+  }
+
+  80% {
+    transform: scaleY(1.2);
+  }
+
+  100% {
+    transform: scaleY(1);
+  }
+}

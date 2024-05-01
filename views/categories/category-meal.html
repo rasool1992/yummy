@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="./images/logo.png" type="image/x-icon" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <title>Yummy</title>
+    <link rel="icon" href="../../images/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../../css/style.css" />
+    <title>RS-Yummy</title>
   </head>
   <body class="dark:bg-black dark:text-white">
     <!-- Nav -->
@@ -17,16 +17,13 @@
         <nav
           class="hidden-nav flex origin-bottom-right flex-col items-start justify-between text-base"
         >
-          <a class="my-2" href="./views/search/search.html">Search</a>
-          <a class="my-2" href="./views/categories/category-list.html"
-            >Categories</a
-          >
-
-          <a class="my-2" href="./views/area/area-country-list.html">Area</a>
-          <a class="my-2" href="./views/ingredients/ingredients-list.html"
+          <a class="my-2" href="../search/search.html">Search</a>
+          <a class="my-2" href="./category-list.html">Categories</a>
+          <a class="my-2" href="../area/area-country-list.html">Area</a>
+          <a class="my-2" href="../ingredients/ingredients-list.html"
             >Ingredients</a
           >
-          <a class="my-2" href="./views/contact.html">Contact Us</a>
+          <a class="my-2" href="../contact.html">Contact Us</a>
         </nav>
         <footer class="aside-footer text-base font-semibold">
           <ul class="social-icons flex gap-x-2">
@@ -86,7 +83,12 @@
         <!-- Nav Content -->
         <div class="flex h-screen flex-col items-center justify-between py-6">
           <!-- Logo -->
-          <img class="w-[70%]" src="./images/logo.png" alt="logo" srcset="" />
+          <img
+            class="w-[70%]"
+            src="../../images/logo.png"
+            alt="logo"
+            srcset=""
+          />
           <!-- Hamburger Menu -->
           <div
             class="hamburger flex cursor-pointer flex-col items-center justify-center gap-y-[3px] px-2 py-4"
@@ -137,13 +139,17 @@
       <div class="container my-10">
         <!-- Image Container -->
         <div
-          class="home-list grid grid-cols-1 gap-4 overflow-hidden sm:grid-cols-2 md:grid-cols-4"
-        ></div>
+          class="cat-box-list grid grid-cols-1 gap-4 overflow-hidden sm:grid-cols-2 md:grid-cols-4"
+        >
+          <!-- cat content -->
+
+          <!-- End Of Image Container -->
+        </div>
       </div>
     </section>
 
     <!-- Add JS File -->
-    <script src="scripts/aside-nav.js"></script>
-    <script type="module" src="./scripts/index.js"></script>
+    <script src="../../scripts/aside-nav.js"></script>
+    <script type="module" src="../../scripts/index.js"></script>
   </body>
 </html>
