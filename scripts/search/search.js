@@ -109,6 +109,7 @@ function dispayMeal(base) {
           //   Make input empty when come back from another page
           formSearch.filterByName.value = "";
           formSearch.filterByLetter.value = "";
+          contentBox = ``;
           location.href = "../preview/preview-meal-details.html";
         }
       });
